@@ -196,3 +196,10 @@ def start_listen(path, map_size, game_speed, update_interval):
         except Exception as e:
             print(e)
             continue
+
+if __name__ == '__main__':
+    update_interval = 0.1
+    game_speed = 1
+    map_size = 128000
+
+    start_listen('data.csv', map_size, game_speed, update_interval)
